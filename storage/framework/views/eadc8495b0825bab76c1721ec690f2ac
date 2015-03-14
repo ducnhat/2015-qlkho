@@ -1,0 +1,47 @@
+<div class="col-md-8 col-md-offset-2">
+    <div class="form-group">
+
+        <?php echo Form::Label('name', 'Tên khách hàng:'); ?>
+
+        <?php echo Form::Text('name', null, ['class' => 'form-control']); ?>
+
+        <?php echo Form::Hidden('type', 'customer'); ?>
+
+
+    </div>
+
+    <div class="form-group">
+
+        <?php echo Form::Label('address', 'địa chỉ:'); ?>
+
+        <?php echo Form::Text('address', null, ['class' => 'form-control']); ?>
+
+
+    </div>
+
+    <div class="form-group">
+
+        <?php echo Form::Label('phonenumber', 'điện thoại:'); ?>
+
+        <?php echo Form::Text('phonenumber', null, ['class' => 'form-control']); ?>
+
+
+    </div>
+
+    <div class="form-group">
+
+        <?php echo Form::Label('email', 'Email:'); ?>
+
+        <?php echo Form::Text('email', null, ['class' => 'form-control']); ?>
+
+
+    </div>
+
+    <div class="form-group">
+
+        <?php echo Form::Submit('Lưu lại', ['class' => 'btn btn-primary form-control']); ?>
+
+
+    </div>
+
+</div>

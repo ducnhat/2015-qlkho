@@ -2,7 +2,7 @@
 
     {!! Form::Label('name', 'Thương hiệu:') !!}
     {!! Form::Text('name', null, ['class' => 'form-control']) !!}
-    {!! Form::Hidden('type', 'brand') !!}
+    {!! Form::Hidden('type', 'type') !!}
 
 </div>
 

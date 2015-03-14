@@ -1,0 +1,54 @@
+<div class="col-md-8 col-md-offset-2">
+    <div class="form-group">
+
+        <?php echo Form::Label('product_name', 'Tên hàng nhập:'); ?>
+
+        <?php echo Form::Text('product_name', null, ['class' => 'form-control']); ?>
+
+
+    </div>
+
+    <div class="form-group">
+
+        <?php echo Form::Label('name', 'Tên hàng:'); ?>
+
+        <?php echo Form::Text('name', null, ['class' => 'form-control']); ?>
+
+
+    </div>
+
+    <div class="form-group">
+
+        <?php echo Form::Label('price', 'Giá:'); ?>
+
+        <?php echo Form::Text('price', null, ['class' => 'form-control']); ?>
+
+
+    </div>
+
+    <div class="form-group">
+
+        <?php echo Form::Label('brand', 'Thương hiệu:'); ?>
+
+        <?php echo Form::Select('brand', $brands, null, ['class' => 'form-control']); ?>
+
+
+    </div>
+
+    <div class="form-group">
+
+        <?php echo Form::Label('name', 'Hũ:'); ?>
+
+        <?php echo Form::Select('type', $types, null, array('class' => 'form-control')); ?>
+
+
+    </div>
+
+    <div class="form-group">
+
+        <?php echo Form::Submit('Lưu lại', ['class' => 'btn btn-primary form-control']); ?>
+
+
+    </div>
+
+</div>
