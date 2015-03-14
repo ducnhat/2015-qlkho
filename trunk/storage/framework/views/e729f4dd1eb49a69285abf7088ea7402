@@ -1,0 +1,19 @@
+<div class="form-group">
+
+    <?php echo Form::Label('name', 'Thương hiệu:'); ?>
+
+    <?php echo Form::Text('name', null, ['class' => 'form-control']); ?>
+
+    <?php echo Form::Hidden('type', 'type'); ?>
+
+
+</div>
+
+<div class="form-group">
+
+    <?php echo Form::Submit('Lưu lại', ['class' => 'btn btn-primary form-control']); ?>
+
+
+</div>
+
+<?php echo Form::close(); ?>

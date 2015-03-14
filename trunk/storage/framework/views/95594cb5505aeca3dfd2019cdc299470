@@ -1,0 +1,20 @@
+<?php $__env->startSection('content'); ?>
+
+    <?php if(!empty($errors->all())): ?>
+        <p class="bg-danger">
+            <?php foreach($errors->all() as $error): ?>
+                <?php echo e($error); ?> <br/>
+            <?php endforeach; ?>
+        </p>
+    <?php endif; ?>
+
+    <?php echo Form::model($data, ['method' => 'PATCH', 'action' => ['ProductController@update', $data->id]]); ?>
+
+
+    <?php echo $__env->make('product.form', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+    <?php echo Form::close(); ?>
+
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

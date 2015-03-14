@@ -12,10 +12,10 @@ class Taxonomy extends Model {
     protected $dates = ['deleted_at'];
 
     public function scopeBrand($query){
-        $query->where('type', '=', 'brand');
+        $query->where('type', '=', 'brand')->orderBy('name');
     }
 
     public function scopeType($query){
-        $query->where('type', '=', 'type');
+        $query->where('type', '=', 'type')->orderBy('name');
     }
 }

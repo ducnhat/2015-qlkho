@@ -7,7 +7,6 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'AddColumnOrderIntoTaxonomyTable' => $baseDir . '/database/migrations/2015_03_10_125809_add_column_order_into_taxonomy_table.php',
-    'CreateBrandTable' => $baseDir . '/database/migrations/2015_03_11_135010_create_brand_table.php',
     'CreateBrandsTable' => $baseDir . '/database/migrations/2015_03_07_080222_create_brands_table.php',
     'CreateCustomerTable' => $baseDir . '/database/migrations/2015_03_07_075715_create_customer_table.php',
     'CreatePasswordResetsTable' => $baseDir . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
@@ -17,6 +16,9 @@ return array(
     'CreateTaxonomyTable' => $baseDir . '/database/migrations/2015_03_07_075136_create_taxonomy_table.php',
     'CreateUsersTable' => $baseDir . '/database/migrations/2014_10_12_000000_create_users_table.php',
     'DatabaseSeeder' => $baseDir . '/database/seeds/DatabaseSeeder.php',
+    'EditColumnTypeOnCustomerTable' => $baseDir . '/database/migrations/2015_03_14_050922_edit_column_type_on_customer_table.php',
+    'EditCustomerTable' => $baseDir . '/database/migrations/2015_03_14_040113_edit_customer_table.php',
+    'EditProductTable' => $baseDir . '/database/migrations/2015_03_14_010613_edit_product_table.php',
     'EditTaxonomyTable' => $baseDir . '/database/migrations/2015_03_10_123758_edit_taxonomy_table.php',
     'File_Iterator' => $vendorDir . '/phpunit/php-file-iterator/File/Iterator.php',
     'File_Iterator_Facade' => $vendorDir . '/phpunit/php-file-iterator/File/Iterator/Facade.php',
