@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 
 use App\Http\Requests\CustomerRequest;
 
-class CustomerController extends Controller {
+class SupplierController extends Controller {
 
 	/**
 	 * Display a listing of the resource.
@@ -15,9 +15,9 @@ class CustomerController extends Controller {
 	 */
 	public function index()
 	{
-		$data = Customer::customer()->get();
+        $data = Customer::supplier()->get();
 
-        return view('customer.index', compact('data'));
+        return view('supplier.index', compact('data'));
 	}
 
 	/**
@@ -27,7 +27,7 @@ class CustomerController extends Controller {
 	 */
 	public function create()
 	{
-		return view('customer.create');
+		return view('supplier.create');
 	}
 
 	/**
@@ -37,11 +37,10 @@ class CustomerController extends Controller {
 	 */
 	public function store(CustomerRequest $request)
 	{
-        $input = $request->all();
-        //dd($input);
-		Customer::create($input);
+		$input = $request->all();
+        Customer::create($input);
 
-        return redirect('customer');
+        return redirect('supplier');
 	}
 
 	/**
@@ -65,7 +64,7 @@ class CustomerController extends Controller {
 	{
 		$data = Customer::findOrFail($id);
 
-        return view('customer.edit', compact('data'));
+        return view('supplier.edit', compact('data'));
 	}
 
 	/**
@@ -79,7 +78,7 @@ class CustomerController extends Controller {
 		$data = Customer::findOrFail($id);
         $data->update($request->all());
 
-        return redirect('customer');
+        return redirect('supplier');
 	}
 
 	/**
@@ -90,10 +89,7 @@ class CustomerController extends Controller {
 	 */
 	public function destroy($id)
 	{
-		$data = Customer::findOrFail($id);
-        $data->delete();
-
-        return redirect('customer');
+		//
 	}
 
 }

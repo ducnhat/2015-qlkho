@@ -24,6 +24,7 @@ Route::resource('taxonomy', 'TaxonomyController');
 Route::resource('type', 'ProductTypeController');
 Route::resource('product', 'ProductController');
 Route::resource('customer', 'CustomerController');
+Route::resource('supplier', 'SupplierController');
 
 // Display all SQL executed in Eloquent
 Event::listen('illuminate.query', function($query)

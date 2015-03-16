@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50616
 File Encoding         : 65001
 
-Date: 2015-03-14 17:35:43
+Date: 2015-03-16 22:25:02
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -29,13 +29,14 @@ CREATE TABLE `customer` (
   `email` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `type` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- ----------------------------
 -- Records of customer
 -- ----------------------------
-INSERT INTO `customer` VALUES ('1', 'test thử lần 2', '2015-03-14 04:22:11', '2015-03-14 05:15:15', null, 'asdasd aaa bbb', '01229012202', 'asda@asd.com', '');
+INSERT INTO `customer` VALUES ('1', 'test thử lần 2', '2015-03-14 04:22:11', '2015-03-14 05:15:15', null, 'asdasd aaa bbb', '01229012202', 'asda@asd.com', 'customer');
 INSERT INTO `customer` VALUES ('3', 'Nhật', '2015-03-14 05:10:19', '2015-03-14 05:10:19', null, '195 qlộ 1A', '0906578610', 'ddnhat@gmail.com', 'customer');
+INSERT INTO `customer` VALUES ('4', 'asdas', '2015-03-16 13:53:18', '2015-03-16 14:28:41', null, '123', '2211', '', 'supplier');
 
 -- ----------------------------
 -- Table structure for `migrations`
