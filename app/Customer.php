@@ -10,4 +10,12 @@ class Customer extends Model {
     protected $fillable = ['name', 'type', 'address', 'phonenumber', 'email'];
     protected $dates = ['deleted_at'];
 
+    public function scopeCustomer($query){
+        $query->where('type', '=', 'customer');
+    }
+
+    public function scopeSupplier($query){
+        $query->where('type', '=', 'supplier');
+    }
+
 }
